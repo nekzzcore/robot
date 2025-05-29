@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+    
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dropdown-item has-submenu" data-submenu="knigi">Книги</div>
+        <div class="submenu" id="knigi">
+            <div class="dropdown-item has-submenu" data-submenu="otechestvennye">Отечественные</div>
+            <div class="submenu" id="otechestvennye">
+                <div class="dropdown-item">Детективы</div>
+                <div class="dropdown-item">Научная фантастика</div>
+                <div class="dropdown-item">Исторические</div>
+            </div>
+            <div class="dropdown-item">Зарубежные</div>
+        </div>
+
+        <div class="dropdown-item has-submenu" data-submenu="dvd">DVD</div>
+        <div class="submenu" id="dvd">
+            <div class="dropdown-item">Отечественные</div>
+            <div class="dropdown-item">Детективы</div>
+            <div class="dropdown-item">Научная фантастика</div>
+            <div class="dropdown-item">Исторические</div>
+            <div class="dropdown-item">Зарубежные</div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+</html>

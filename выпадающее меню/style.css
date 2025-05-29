@@ -1,0 +1,33 @@
+body {
+            font-family: Arial, sans-serif;
+        }
+
+.dropdown {
+            width: 200px;
+        }
+
+.dropdown-item {
+            background-color: violet;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+}
+
+.dropdown-item:hover {
+            background-color: #ddd;
+        }
+
+.dropdown-item.has-submenu::after {
+            content: '+';
+            float: left;
+            margin-left: 5px;
+        }
+
+.submenu {
+            display: none;
+            margin-left: 20px;
+        }
+
+.submenu.active {
+            display: block;
+        }
